@@ -1,0 +1,19 @@
+.heading5 {
+    font-size: 20px;
+    color: #fe5525;
+    position: relative;
+    padding-left: 10px; 
+  }
+  
+  .heading5::before {
+    font-size: 20px;
+    content: "";
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #fe5525;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+  }

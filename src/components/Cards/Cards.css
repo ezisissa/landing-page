@@ -1,0 +1,102 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 500px));
+  gap: 2rem;
+}
+
+.card {
+  background: #fafafa;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.catprice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.category {
+  background: #fe5525;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.price {
+  color: #fe5525;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 100px));
+}
+
+.propdetail {
+  display: flex;
+  font-size: 0.8rem;
+  gap: 0.1rem;
+  color: #555;
+}
+
+.info-desc {
+  font-weight: bold;
+}
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 1.5rem 0;
+    width: 50%;
+    align-self: center;
+  }
+.schedule-btn {
+  background: black;
+  color: white;
+  max-width: 350px;
+  align-self: center;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0 1rem 0;
+}
+
+.schedule-btn:hover {
+  background: #fe5525;
+}
+
+@media screen and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+  .info {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 0.1rem;
+  }
+}

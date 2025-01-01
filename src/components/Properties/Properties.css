@@ -1,0 +1,184 @@
+/* Main container */
+.properties {
+  display: flex;
+  padding: 0 6rem;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 8rem 0;
+}
+
+/* Description section */
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Image container*/
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.featured_icon {
+  position: absolute;
+  bottom: -6%;
+  left: -10%;
+  background-color: #fe5525;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured_icon img {
+  width: 60%;
+  padding-left: 2px;
+}
+
+
+
+/* FAQ section styling */
+.description .faq {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+}
+
+/* FAQ item styling */
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* FAQ question styling with hover effect */
+.faq-question {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #fe5525;
+}
+
+/* Active FAQ item question */
+.faq-item.open .faq-question {
+  color: #fe5525;
+}
+
+/* FAQ answer styling */
+.faq-answer {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Divider between FAQ items */
+.faq-divider {
+  border: none;
+  border-top: 1px solid #cdcdcd;
+  margin: 1rem 0;
+}
+
+/* Main title (h2) styling */
+.description h2 {
+  width: 50%;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+/* Features section styling */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature item styling */
+.feature-item {
+  padding: 20px 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* Divider below each feature item */
+.feature-item::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #cdcdcd;
+  margin-top: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-item:last-child::after {
+  content: none;
+}
+
+/* Feature info styling */
+.feature-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature-info p {
+  color: #cdcdcd;
+  font-size: 12px;
+}
+
+/* Divider styling for the feature section */
+.feature-divider {
+  border: none;
+  border-top: 1px solid #cdcdcd;
+  margin: 1rem auto;
+  width: 50%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 992px) {
+  .properties {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 2rem;
+  }
+
+  .description h2 {
+    line-height: 4rem;
+  }
+
+  .features,
+  .description {
+    width: 100%;
+  }
+}

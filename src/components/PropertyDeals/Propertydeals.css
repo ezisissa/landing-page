@@ -1,0 +1,23 @@
+.propdeal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 6rem;
+  margin: 8rem 0;
+}
+.propdeal h2 {
+  font-size: 3rem;
+  width: 40%;
+  text-align: center;
+  line-height: 5rem;
+
+
+}
+
+@media screen and (max-width: 992px){
+    .propdeal h2{
+        width: 60%;
+    }
+    
+}
